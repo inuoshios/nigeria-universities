@@ -27,17 +27,18 @@ func Welcome(w http.ResponseWriter, r *http.Request) {
 }
 
 func GetAllUniveristy(w http.ResponseWriter, r *http.Request) {
-	var universitiesReplica []models.UniversitiesReplica
+	var universities []models.Universities
 
 	for _, data := range models.CovertJSONToStruct() {
-		universitiesReplica = append(universitiesReplica, models.UniversitiesReplica{
+		universities = append(universities, models.Universities{
+			ID:           data.ID,
 			Name:         data.Name,
 			Abbreviation: data.Abbreviation,
 			WebsiteLink:  data.WebsiteLink,
 		})
 	}
 
-	if err := json.NewEncoder(w).Encode(universitiesReplica); err != nil {
+	if err := json.NewEncoder(w).Encode(universities); err != nil {
 		log.Fatal(err)
 	}
 }
