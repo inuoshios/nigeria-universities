@@ -6,12 +6,17 @@ import (
 	"os"
 
 	"github.com/0xmlx/nigeria-uni/internal/router"
+	"github.com/joho/godotenv"
 )
 
-// getting our environment variable...
-var port = os.Getenv("PORT")
-
 func main() {
+	// load the env file
+	if err := godotenv.Load("app.env"); err != nil {
+		log.Fatalf("error loading env file %s", err)
+	}
+
+	// getting our env
+	port := os.Getenv("PORT")
 
 	log.Println("server running at port", port)
 
