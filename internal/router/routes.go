@@ -3,9 +3,9 @@ package router
 import (
 	"net/http"
 
-	"github.com/0xmlx/nigeria-uni/internal/controllers"
-	"github.com/0xmlx/nigeria-uni/internal/middlewares"
 	"github.com/gorilla/mux"
+	"github.com/inuoshios/nigeria-uni/internal/controllers"
+	"github.com/inuoshios/nigeria-uni/internal/middlewares"
 )
 
 type Routes struct {

@@ -6,8 +6,8 @@ import (
 	"net/http"
 	"strings"
 
-	"github.com/0xmlx/nigeria-uni/internal/models"
 	"github.com/gorilla/mux"
+	"github.com/inuoshios/nigeria-uni/internal/models"
 )
 
 func Welcome(w http.ResponseWriter, r *http.Request) {

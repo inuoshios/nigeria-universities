@@ -5,7 +5,7 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/0xmlx/nigeria-uni/internal/router"
+	"github.com/inuoshios/nigeria-uni/internal/router"
 	"github.com/joho/godotenv"
 )
 
