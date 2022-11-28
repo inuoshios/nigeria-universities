@@ -28,10 +28,13 @@ func Welcome(w http.ResponseWriter, r *http.Request) {
 
 func GetAllUniveristy(w http.ResponseWriter, r *http.Request) {
 	var universities []models.Universities
+	var id uint
 
 	for _, data := range models.CovertJSONToStruct() {
+		id++
+
 		universities = append(universities, models.Universities{
-			ID:           data.ID,
+			ID:           id,
 			Name:         data.Name,
 			Abbreviation: data.Abbreviation,
 			WebsiteLink:  data.WebsiteLink,
@@ -46,8 +49,10 @@ func GetAllUniveristy(w http.ResponseWriter, r *http.Request) {
 func GetSpecificUniversity(w http.ResponseWriter, r *http.Request) {
 	param := mux.Vars(r)
 
+	var id uint
 	for _, data := range models.CovertJSONToStruct() {
-
+		id++
+		data.ID = id
 		if strings.EqualFold(data.Abbreviation, param["abbreviation"]) {
 			if err := json.NewEncoder(w).Encode(data); err != nil {
 				log.Fatal(err)

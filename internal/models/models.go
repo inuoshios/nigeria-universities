@@ -7,7 +7,7 @@ import (
 )
 
 type Universities struct {
-	ID           int    `json:"id"`
+	ID           uint   `json:"id"`
 	Name         string `json:"name"`
 	Abbreviation string `json:"abbreviation"`
 	WebsiteLink  string `json:"website_link"`
