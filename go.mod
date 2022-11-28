@@ -1,4 +1,4 @@
-module github.com/inuoshios/nigeria-uni
+module github.com/ixxiv/nigeria-uni
 
 go 1.18
 
