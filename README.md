@@ -1,6 +1,6 @@
 # Nigeria Universities API
 
-This api returns all the list of Universities in Nigeria. You can also get a specific univeristy by searching for it using that particualar university abbreviation. E.g. `{uniben, eksu}`.
+This API returns all the list of Universities in Nigeria. You can also get a specific univeristy by searching for it using that particualar university abbreviation. E.g. `{uniben, eksu}`.
 
 ## How it works.
 
@@ -12,12 +12,10 @@ This api returns all the list of Universities in Nigeria. You can also get a spe
 
 ## Want to contribute?
 
-Make sure you have Go installed on your machine (well, not neccesary, but you understand).
-
 - Clone this repository
 
 ```bash
-git clone https://github.com/0xmlx/nigeria-universities
+git clone https://github.com/ixxiv/nigeria-universities
 ```
 
 - Change your directory
@@ -29,7 +27,10 @@ cd nigeria-universities
 - Run the program
 
 ```bash
-go run ./cmd/api
+make run
 ```
+or you could run this command instead
 
-Before you run the server, make sure your run `source {envname}` on your preferred terminal. You can also use `joho/godotenv` if you like. 🤷‍♂️
+```bash
+go run main.go
+```
