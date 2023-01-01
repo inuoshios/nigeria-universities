@@ -5,8 +5,8 @@ import (
 	"net/http"
 	"os"
 
-	"github.com/ixxiv/nigeria-uni/internal/router"
 	"github.com/joho/godotenv"
+	"github.com/rxxcc/nigeria-uni/router"
 )
 
 func main() {

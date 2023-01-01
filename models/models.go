@@ -15,7 +15,7 @@ type Universities struct {
 
 // CovertJSONToStruct reads the JSON file and converts it to a struct...
 func CovertJSONToStruct() []Universities {
-	uni, err := os.ReadFile("internal/json/uni.json")
+	uni, err := os.ReadFile("json/uni.json")
 	if err != nil {
 		log.Fatalf("an error occured: %v", err)
 	}

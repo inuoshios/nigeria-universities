@@ -15,7 +15,7 @@ This API returns all the list of Universities in Nigeria. You can also get a spe
 - Clone this repository
 
 ```bash
-git clone https://github.com/ixxiv/nigeria-universities
+git clone https://github.com/rxxcc/nigeria-universities
 ```
 
 - Change your directory
@@ -29,6 +29,7 @@ cd nigeria-universities
 ```bash
 make run
 ```
+
 or you could run this command instead
 
 ```bash

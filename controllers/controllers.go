@@ -7,7 +7,7 @@ import (
 	"strings"
 
 	"github.com/gorilla/mux"
-	"github.com/ixxiv/nigeria-uni/internal/models"
+	"github.com/rxxcc/nigeria-uni/models"
 )
 
 func Welcome(w http.ResponseWriter, r *http.Request) {
