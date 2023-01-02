@@ -4,8 +4,8 @@ import (
 	"net/http"
 
 	"github.com/gorilla/mux"
-	"github.com/rxxcc/nigeria-uni/controllers"
-	"github.com/rxxcc/nigeria-uni/middlewares"
+	"github.com/inuoshios/nigeria-uni/controllers"
+	"github.com/inuoshios/nigeria-uni/middlewares"
 )
 
 type Routes struct {

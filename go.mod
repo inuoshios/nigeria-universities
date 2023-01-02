@@ -1,4 +1,4 @@
-module github.com/rxxcc/nigeria-uni
+module github.com/inuoshios/nigeria-uni
 
 go 1.19
 

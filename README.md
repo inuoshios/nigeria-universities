@@ -15,7 +15,7 @@ This API returns all the list of Universities in Nigeria. You can also get a spe
 - Clone this repository
 
 ```bash
-git clone https://github.com/rxxcc/nigeria-universities
+git clone https://github.com/inuoshios/nigeria-universities
 ```
 
 - Change your directory
