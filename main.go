@@ -3,20 +3,12 @@ package main
 import (
 	"log"
 	"net/http"
-	"os"
 
 	"github.com/inuoshios/nigeria-uni/router"
-	"github.com/joho/godotenv"
 )
 
 func main() {
-	// load the env file
-	if err := godotenv.Load("ENV"); err != nil {
-		log.Fatalf("error loading env file %s", err)
-	}
-
-	// getting our env
-	port := os.Getenv("PORT")
+	port := "8000"
 
 	log.Println("server running at port", port)
 
